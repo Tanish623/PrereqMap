@@ -1,0 +1,143 @@
+
+/* 1. Make sizing predictable */
+* {
+    box-sizing: border-box;
+}
+
+/* 2. Page defaults */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #172033;
+}
+
+/* 3. Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+nav h2 {
+    margin: 0;
+    color: #5145cd;
+    font-size: 24px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #172033;
+    font-weight: 600;
+}
+
+/* 4. Main hero section */
+.hero {
+    max-width: 850px;
+    margin: 100px auto;
+    padding: 0 24px;
+    text-align: center;
+}
+
+.tagline {
+    color: #5145cd;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h1 {
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 20px 0;
+    letter-spacing: -1px;
+}
+
+.description {
+    max-width: 600px;
+    margin: 0 auto 32px;
+    color: #647084;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* 5. Search area */
+.search-box {
+    display: flex;
+    gap: 10px;
+    max-width: 650px;
+    margin: auto;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 16px;
+    border: 1px solid #d5d9e5;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+input:focus {
+    outline: 2px solid #a5a0f5;
+    border-color: #5145cd;
+}
+
+/* 6. Button */
+button {
+    padding: 16px 22px;
+    background: #5145cd;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: #4035ad;
+}
+
+button:focus-visible {
+    outline: 3px solid #a5a0f5;
+    outline-offset: 3px;
+}
+
+/* 7. JavaScript message */
+#message {
+    color: #5145cd;
+    margin-top: 20px;
+}
+
+/* 8. Mobile layout */
+@media (max-width: 600px) {
+    nav {
+        padding: 18px 6%;
+    }
+
+    .hero {
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}

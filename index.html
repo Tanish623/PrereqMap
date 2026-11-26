@@ -9,9 +9,9 @@
 </head>
 
 <body>
-    <nav>
-        <h2>PrereqMap</h2>
-        <a href="#">Home</a>
+    <nav class="navbar">
+        <a href="#" class="logo"><span class="logo-icon">📚</span>PrereqMap</a>
+        <a href="#" class="nav-label">Home</a>
     </nav>
 
     <main>
@@ -40,9 +40,13 @@
 
             <p id="message"></p>
             <p id="characterCount">Characters: 0</p>
+
+            <h2>Available topics</h2>
+                    <ul id="topicList" class="topic-grid"></ul>
+            <div id="results"><div id="resultContent"></div></div>
         </section>
     </main>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 </body>
 </html>
